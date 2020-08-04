@@ -62,12 +62,12 @@ No needs of installation.
 Simply run a server using python3's http.server on an open port, and navigate into your browser. 
 
 ```shell
-you@yourmachine$ python3 -m http.server 5000
-Serving HTTP on 0.0.0.0 port 5000 (http://0.0.0.0:5000/) ...
-127.0.0.1 - - [03/Aug/2020 01:51:30] "GET / HTTP/1.1" 200 -
-..
-.
+you@yourmachine$ sudo python3 https.server.py
 ```
+
+By doing so, you will be using a self-signed certificate, which will be then later compatible with three.js features running on android client. 
+The https connection (for this date of 04.08.2020) is a neccesity to achieve the goal. 
+
 If you run on the client side (android in my case), the [arrc app - https://github.com/onaycan/ARRC](https://github.com/onaycan/ARRC), you will see the following on your mobile phone: 
 
 ![Image 2](./readme_pics/client_view.png?raw=true "Client View")
